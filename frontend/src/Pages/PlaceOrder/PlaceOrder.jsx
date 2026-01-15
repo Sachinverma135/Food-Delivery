@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import "./PlaceOrder.css";
 import { StoreContext } from "../../context/Storecontext";
 import axios from "axios";
-import PayPalCheckout from "../../components/Paypalcheckout";
+import PayPalCheckout from "../../components/PayPalCheckout";
 
 const PlaceOrder = () => {
   const { getTotalCartAmount, token, food_list, cartitems, url } =
