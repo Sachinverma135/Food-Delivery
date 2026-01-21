@@ -5,7 +5,7 @@ import { StoreContext } from "./Storecontext";
 
 const StoreContextProvider = (props) => {
   const [cartitems, setCartitems] = useState({});
-  const url="https://food-del-backend-q0w3.onrender.com"
+  const url="https://food-del-backend-q0w3.onrender.com/"
 
   const [token,setToken] = useState()
      
