@@ -10,10 +10,13 @@ import orderRouter from './routes/orderRoutes.js';
 
 
 const app = express()
-const port = 4000
+const port = process.env.PORT || 4000
 
 app.use(express.json())
-app.use(cors())
+app.use(cors({
+    origin:"https://food-del-frontend-ymhw.onrender.com",
+    methods:["GET","POST","PUT","DELETE"]
+}))
 
 //db connect
 connectDB()
